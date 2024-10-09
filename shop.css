@@ -33,6 +33,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    /* border: 1px solid red; */
 }
 
 .logo {
@@ -66,20 +67,23 @@ html {
 }
 
 .con {
-    padding-top: 1em;
+    /* padding-top: 1em; */
     box-sizing: border-box;
-    margin-top: 3.8em;
+    margin-top: 4.7em;
+    /* border: 1px solid black; */
+
 }
 
 .home {
     display: flex;
     align-items: center;
-    padding: 5em 7em;
+    padding: 7em 7em;
     /* margin-bottom: 4em; */
     background-image: url('banner4.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* border: 1px solid red; */
     /* height: 400px; */
 
 }
@@ -174,7 +178,7 @@ html {
     /* border: 1px solid red; */
     /* margin-bottom: 4em; */
     padding: 3em 7em;
-    /* padding-top: 3em; */
+    padding-top: 5em;
     background-color: rgb(245, 242, 242);
     /* background-color: black; */
 }
@@ -264,6 +268,23 @@ html {
     color: #000;
 }
 
+div.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.authorimg img {
+    border-radius: 3em;
+}
+
+p.name {
+    font-weight: bold;
+    line-height: .8em;
+}
+
+
+
 
 .shop {
     /* padding: 6em 0; */
@@ -315,16 +336,19 @@ html {
 .shopbox {
     width: calc(33.8% - 20px);
     /* width: calc(25.4% - 20px); */
-    /* border: 1px solid red; */
     /* padding: .7em 0em; */
     box-sizing: border-box;
     margin: .3em 0;
+    /* height: 350px; */
 }
 
 .shopbox img {
     max-width: 100%;
     /* height: 28vh;
     object-fit: cover; */
+    height: auto;
+    /* height: 200px; */
+
     display: block;
     border-radius: 1em;
     margin-bottom: 1em;
@@ -425,17 +449,27 @@ html {
     color: #999;
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 .conticons {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
     gap: 20px;
     /* border: 1px solid red; */
 }
 
+.imgcon {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4em;
+}
+
 .conticons img {
     cursor: pointer;
+    display: block;
 }
 
 div.menubox {
@@ -541,14 +575,14 @@ div.menupage {
 
 
 @media (max-width: 900px) {
-    .shopcon {
-        gap: 0;
-    }
+    /* .shopcon {
+        gap: 15px;
+    } */
 
     .shopbox,
     .revbox,
     .aboutbox {
-        width: 100%;
+        width: calc(50.7% - 15px);
     }
 
     .contlogo h2 {
@@ -580,7 +614,7 @@ div.menupage {
     } */
 
     .home {
-        padding: 3em 1em;
+        padding: 2em 1em;
     }
 
     .text h1 {
@@ -589,6 +623,16 @@ div.menupage {
 }
 
 @media (max-width: 600px) {
+
+    .shopbox,
+    .revbox,
+    .aboutbox {
+        width: 100%;
+    }
+
+    .con {
+        margin-top: 4.1em;
+    }
 
     .home,
     .about,
@@ -600,12 +644,12 @@ div.menupage {
         padding-right: 1em;
     }
 
-    .shopbox p.itemname {
+    /* .shopbox p.itemname {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
         overflow: hidden;
-    }
+    } */
 
     div.header p.desc {
         width: 100%;
