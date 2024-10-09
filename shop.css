@@ -544,6 +544,11 @@ div.menupage {
         flex-direction: column;
     }
 
+    .home {
+        background-image: none;
+        background-image: url('coffee-cup-skin-cream-bottles-white-pannels-background.jpg');
+    }
+
     .home .text {
         padding: 0;
     }
@@ -583,6 +588,7 @@ div.menupage {
     .revbox,
     .aboutbox {
         width: calc(50.7% - 15px);
+        width: calc(51% - 20px);
     }
 
     .contlogo h2 {
@@ -592,6 +598,10 @@ div.menupage {
     .contcon,
     .contlinks {
         flex-direction: column;
+    }
+
+    .contlogo {
+        margin-bottom: 1.5em;
     }
 
     .linkdiv {
