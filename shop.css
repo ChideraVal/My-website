@@ -79,7 +79,7 @@ html {
     align-items: center;
     padding: 7em 7em;
     /* margin-bottom: 4em; */
-    background-image: url('banner4.png');
+    background-image: url('coffee-cup-skin-cream-bottles-white-pannels-background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -545,7 +545,6 @@ div.menupage {
     }
 
     .home {
-        background-image: none;
         background-image: url('coffee-cup-skin-cream-bottles-white-pannels-background.jpg');
     }
 
