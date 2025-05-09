@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. John Doe - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1581091870632-31c74f0e2e6d') no-repeat center center/cover;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #004080;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #003060;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 4rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "\2022";
+      color: #004080;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 0.75rem 2rem;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #002050;
+    }
+    footer {
+      text-align: center;
+      background: #004080;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dr. John Doe</h1>
+  <p>Lecturer | Researcher | Data Scientist</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#projects">Projects</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. John Doe" class="profile-pic">
+      <p>I am a senior lecturer in Computer Science with over 10 years of teaching and research experience. My interests include artificial intelligence, data analysis, and educational technology. I have published in several high-impact journals and supervised numerous postgraduate research projects.</p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research & Publications</h2>
+    <ul>
+      <li>"AI in Education: Challenges and Solutions" - Journal of AI, 2023</li>
+      <li>"Data Mining Techniques in Healthcare" - TechConf, 2022</li>
+      <li>"Predictive Models in Student Performance" - EDUtech Journal, 2021</li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li>Introduction to Programming</li>
+      <li>Machine Learning</li>
+      <li>Data Science Tools</li>
+      <li>Advanced Algorithms</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Grants</h2>
+    <ul>
+      <li>Smart Learning System - Funded by XYZ Foundation (2023)</li>
+      <li>COVID-19 Data Tracker - In collaboration with ABC University</li>
+      <li>AI-Powered Career Guidance Platform</li>
+    </ul>
+  </section>
+
+  <section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <p><a href="#">Download CV (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Dr. John Doe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

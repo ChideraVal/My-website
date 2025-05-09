@@ -489,7 +489,6 @@ div.menupage {
     font-weight: bold;
 }
 
-
 @media (max-width: 1200px) {
     .home, .about, .feature, .reviews, .menu, .contact {
         padding-left: 2em;
