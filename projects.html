@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tencis Designs</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="con">
+
+        <div class="reviews" style="background-color: white;" id="reviews" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="200">
+            <div class="revhead">
+                <p>Projects & Grants</p>
+                <!-- <p>Get a standard copy of my resume</p> -->
+                <!-- <a href="cv.txt" download="mycv.txt">Download CV (PDF)</a> -->
+            </div>
+            <br>
+
+
+            <div class="revcon">
+                <div class="revbox">
+                    <div>
+                        <h3>AI in Education: Challenges and Solutions</h3>
+                        <p>Journal of AI, 2023</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>Data Mining Techniques in Healthcare</h3>
+                        <p>TechConf, 2022</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>Predictive Models in Student Performance</h3>
+                        <p>EDUtech Journal, 2021</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>AI in Education: Challenges and Solutions</h3>
+                        <p>Journal of AI, 2023</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>Data Mining Techniques in Healthcare</h3>
+                        <p>TechConf, 2022</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>Predictive Models in Student Performance</h3>
+                        <p>EDUtech Journal, 2021</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>AI in Education: Challenges and Solutions</h3>
+                        <p>Journal of AI, 2023</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>Data Mining Techniques in Healthcare</h3>
+                        <p>TechConf, 2022</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+                <div class="revbox">
+                    <div>
+                        <h3>Predictive Models in Student Performance</h3>
+                        <p>EDUtech Journal, 2021</p>
+                    </div>
+                    <a href="">Read Paper</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="header">
+                <p>Contact me</p>
+                <h2>Get in touch for more information</h2>
+            </div>
+            <div class="contcon">
+                <!-- <div class="contbox">
+                    <div class="contimg">
+                        <img src="instagram.png" alt="" width="40" height="40">
+                    </div>
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/_chideravalentine/" target="_blank">@_chideravalentine</a>
+                </div> -->
+
+                <div class="contbox">
+                    <div class="contimg">
+                        <img src="email.png" alt="" width="40" height="40">
+                    </div>
+                    <p>Write Me -</p>
+                    <a href="mailto:pyjamel224@gmail.com">pyjamel224@gmail.com</a>
+                </div>
+
+                <div class="contbox">
+                    <div class="contimg">
+                        <img src="telephone.png" alt="" width="40" height="40">
+                    </div>
+                    <p>Call me -</p>
+                    <a href="tel:09130592962">+234 9130592962</a>
+                </div>
+
+                <div class="contbox">
+                    <div class="contimg">
+                        <img src="linkedin.png" alt="" width="40" height="40">
+                    </div>
+                    <p>Find me -</p>
+                    <a href="www.tencis.online" target="_blank">www.linkedin.com/adeola</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <div class="logo">
+            <h1>Oluadelawal</h1>
+        </div>
+        <div class="links">
+            <a href="portfolio.html/#">Home</a>
+            <a href="portfolio.html/#about">About</a>
+            <a href="portfolio.html/#features">Career</a>
+            <a href="portfolio.html/#reviews">CV</a>
+            <a href="#contact">Contact</a>
+            <button id="menu-button">Menu</button>
+        </div>
+    </div>
+
+    <div class="menubox" id="menu-element">
+        <div class="menupage">
+            <h3>Menu</h3>
+            <button id="home-button">Home</button>
+            <button id="about-button">About</button>
+            <button id="features-button">Career</button>
+            <button id="reviews-button">CV</button>
+            <button id="contact-button">Contact</button>
+            <button id="close-button">Close</button>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        let menuButton = document.getElementById('menu-button');
+        let menuElement = document.getElementById('menu-element');
+        let homeDiv = document.getElementById('home');
+        let aboutDiv = document.getElementById('about');
+        let featuresDiv = document.getElementById('features');
+        let reviewsDiv = document.getElementById('reviews');
+        let contactDiv = document.getElementById('contact');
+        let homeButton = document.getElementById('home-button');
+        let aboutButton = document.getElementById('about-button');
+        let featuresButton = document.getElementById('features-button');
+        let reviewsButton = document.getElementById('reviews-button');
+        let contactButton = document.getElementById('contact-button');
+        let closeButton = document.getElementById('close-button');
+
+
+        menuButton.onclick = () => {
+            menuElement.style.display = 'flex';
+        }
+
+        closeButton.onclick = () => {
+            menuElement.style.display = 'none';
+        }
+
+        homeButton.onclick = () => {
+            // window.scrollTo({ top: 0, behavior: 'smooth' })
+            // menuElement.style.display = 'none';
+            open('www.tencis.online/portfolio')
+        }
+
+        aboutButton.onclick = () => {
+            aboutDiv.scrollIntoView({ behavior: 'smooth' })
+            menuElement.style.display = 'none';
+        }
+
+        featuresButton.onclick = () => {
+            featuresDiv.scrollIntoView({ behavior: 'smooth' })
+            menuElement.style.display = 'none';
+        }
+
+        reviewsButton.onclick = () => {
+            reviewsDiv.scrollIntoView({ behavior: 'smooth' })
+            menuElement.style.display = 'none';
+        }
+
+        contactButton.onclick = () => {
+            contactDiv.scrollIntoView({ behavior: 'smooth' })
+            menuElement.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
