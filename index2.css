@@ -138,6 +138,73 @@ html {
     }
 }
 
+.paper {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-start;
+    padding: 3em 7em;
+    gap: 40px;
+    /* margin-bottom: 4em; */
+}
+
+.read {
+    flex: 2;
+}
+
+.side {
+    flex: 1;
+    /* padding: 1em;
+    box-sizing:  border-box; */
+    position: sticky;
+    top: 6em;
+    /* border: 1px solid red; */
+}
+
+.read h1 {
+    font-size: 2.5em;
+}
+
+.read h2 {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+    margin-top: 2em;
+}
+
+.read h3, .next h3 {
+    font-size: 1em;
+    margin-bottom: .3em;
+    margin-top: 1em;
+}
+
+.read p {
+    font-size: .99em;
+    color: #444;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.next div {
+    flex: 1;
+}
+
+.next p {
+    font-size: .9em;
+    color: #444;
+}
+
+.next a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(10, 4, 37);
+    padding: .4em .6em;
+    box-sizing: border-box;
+    border-radius: 0em;
+    display: inline-block;
+}
 
 .feat {
     /* padding: 6em 0; */
@@ -316,7 +383,7 @@ ul li {
 
 .revbox h3 {
     line-height: 1.4em;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #000;
 }
 
@@ -328,11 +395,12 @@ ul li {
 .revbox a {
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: rgb(10, 4, 37);
     padding: 1em;
     box-sizing: border-box;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
 .about {
@@ -607,6 +675,7 @@ div.menupage {
 
     .home,
     .about,
+    .paper,
     .feature,
     .reviews,
     .menu,
@@ -619,8 +688,13 @@ div.menupage {
 @media (max-width: 1000px) {
 
     .home,
+    .paper,
     .feature {
         flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
     }
 
     .home .text,
@@ -717,4 +791,10 @@ div.menupage {
     .contbox p + a {
         font-size: 1.2em;
     }
+
+    
+    .read h1 {
+        font-size: 2.2em;
+    }
+
 }
